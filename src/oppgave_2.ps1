@@ -9,3 +9,14 @@ param (
 Write-Host "... $Navn!"
 Write-Host '... $navn!'
 
+Write-Host "... $navn!"
+Write-Host '... $Navn!'
+
+
+# Gir følgende resultat
+
+#Navn: Akklebakkle
+#... Akklebakkle!
+#... $navn!
+#... Akklebakkle!
+#... $Navn!
