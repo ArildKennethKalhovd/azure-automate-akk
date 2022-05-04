@@ -25,13 +25,13 @@ $kortstokkJson = $webRequest.Content
 
 $kortstokk = ConvertFrom-Json -InputObject $kortstokkJson
 
-foreach ($kort in $kortstokk) {
+<#foreach ($kort in $kortstokk) {
     Write-Output $kort
 }
 
 foreach ($kort in $kortstokk) {
     Write-Output "$($kort.suit[0])+$($kort.value)"
-}
+}#>
 
 function kortstokkTilStreng {
     [OutputType([string])]
