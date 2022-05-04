@@ -30,3 +30,12 @@ function kortstokkTilStreng {
 }
 
 Write-Output "Kortstokk: $(kortStokkTilStreng -kortstokk $kortstokk)"
+
+<# 
+
+sjekke f.eks. $kort[-1] ikke er lik $kort 
+
+$kortstokk.count og bruke IF
+
+#>
+
