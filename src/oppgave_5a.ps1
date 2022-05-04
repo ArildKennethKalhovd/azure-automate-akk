@@ -88,7 +88,7 @@ foreach ($kort in $kortstokk) {
     }
 }
 
-Write-Host "Poengsum: $poengKortstokk"
+<#Write-Host "Poengsum: $poengKortstokk"#>
 
 # 2. utgave - ønsker koden som en funksjon - hvorfor?
 
