@@ -154,13 +154,23 @@ function skrivUtResultat {
 # bruker 'blackjack' som et begrep - er 21
 $blackjack = 21
 
-if ((sumPoengKortstokk -kortstokk $meg) -eq $blackjack) {
-    skrivUtResultat -vinner 'meg' -kortStokkMagnus $magnus -kortStokkMeg $meg
+if 
+    # Sjekker først om begge har blackjack for da er det Draw
+    ((sumPoengKortstokk -kortstokk $meg) -eq $blackjack -and (sumPoengKortstokk -kortstokk $magnus) -eq $blackjack) {
+    skrivUtResultat -vinner 'draw' -kortStokkMagnus $magnus -kortStokkMeg $meg
     exit
 }
-elseif ((sumPoengKortstokk -kortstokk $magnus) -eq $blackjack) {
-    skrivUtResultat -vinner "magnus" -kortStokkMagnus $magnus -kortStokkMeg $meg
-    exit
+elseif 
+        # Sjekker om jeg har blackjack og skriver evt ut meg som vinner og begge deltakeres resultat
+        ((sumPoengKortstokk -kortstokk $meg) -eq $blackjack) {
+        skrivUtResultat -vinner 'meg' -kortStokkMagnus $magnus -kortStokkMeg $meg
+        exit
+}
+elseif 
+        # Sjekker om Magnus har blackjack og skriver evt ut Magnus som vinner og begge deltakeres resultat
+        ((sumPoengKortstokk -kortstokk $magnus) -eq $blackjack) {
+        skrivUtResultat -vinner "magnus" -kortStokkMagnus $magnus -kortStokkMeg $meg
+        exit
 }
 
 # Hva er om begge har blackjack? Kanskje det kalles draw?
