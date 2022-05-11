@@ -132,4 +132,4 @@ Write-Host "magnus: $(kortstokktilstreng -kortstokk $magnus)"
 Write-Host "kortstokk: $(kortstokktilstreng -kortstokk $kortstokk)"
 
 
-$megpoeng = sumPoengKortstokk [$meg]
+# $megpoeng = sumPoengKortstokk [$meg]
