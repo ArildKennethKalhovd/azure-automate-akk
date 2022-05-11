@@ -185,7 +185,7 @@ while ((sumpoengkortstokk -kortstokk $meg) -lt 17) {
 }
 
 if ((sumpoengkortstokk -kortstokk $meg) -gt $blackjack) {
-    skrivresultat -vinner 'Magnus' -kortStokkMagnus $magnus -kortStokkMeg $meg
+    skrivutresultat -vinner 'Magnus' -kortStokkMagnus $magnus -kortStokkMeg $meg
     exit
 }
 
