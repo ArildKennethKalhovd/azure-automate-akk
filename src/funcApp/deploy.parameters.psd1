@@ -1,9 +1,9 @@
 @{
     # navnet på din ressursgruppe sandbox
-    resourceGroupName  = '<navn>-workshop-<random>' 
+    resourceGroupName  = 'arild-kennet-workshop-522b5q65v7xlk' 
     # navnet til storage account som skal opprettes, globalt unikt
-    storageAccountName = '<navn><random>' 
+    storageAccountName = 'arildkennet522b5q65v7xlk' 
     # navnet til function app som skal opprettes - globalt unikt
-    functionAppName    = 'bj-<navn>-oppg13' #globalt unikt
+    functionAppName    = 'bj-akk-oppg13' #globalt unikt
     location           = 'Norway East'
 }
