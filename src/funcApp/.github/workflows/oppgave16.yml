@@ -21,8 +21,6 @@ jobs:
       - name: Run Blackjack script file
         run: ./src/oppgave_10a.ps1
 
-      - creds: ${{ secrets.AZURE_CRDENTIALS }} 
-
       - name: Login via Az module
         uses: azure/login@v1
         with:
