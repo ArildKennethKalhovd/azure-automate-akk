@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run Blackjack script file
-        run: oppgave_10a.ps1
+        run: ./src/oppgave_10a.ps1
